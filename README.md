@@ -6,3 +6,6 @@ Creacion del repositorio para el proyecto
 
 ## Septiembre 05
 cambio en readme.md para hacer pull 
+
+## Sep 06 
+Creacion de la rama dev  
