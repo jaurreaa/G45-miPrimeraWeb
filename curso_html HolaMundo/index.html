@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML desde cero HolaMundo</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <h2>Formularios</h2>
+    <form action="/formulario" method="GET">
+        <label for="name">Nombre</label>
+        <input value="Jeffersonn" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <br>
+
+        <label for="apellido">Apellido</label>
+        <input value="Urrea" type="text" id="apellido" name="ape" placeholder="Ingresa tu nombre">
+        <br>
+
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="50" rows="10"
+            placeholder="Ingrese un comentario... ">comentario por defecto</textarea>
+        <br>
+
+        <input type="submit">
+        <!-- 
+            Cuando de clic en el boton -> va a tomar todos los valores que se encuentren dentro de los campos del formulario y los va a enviar al servidor.
+
+            Debemos especificar a donde queremos que se vayan todos esos datos se hace dentro de la etiqueta form con la propiedad action -> action debe contener la ruta dentro de nuestro servidor o podria ser tambien dentro de otra aplicacion otra web.
+
+            Despues debemos especificar el method que vamos a utilizar para poder enviar los datos, tenemos 2 alternativas:
+            - GET -> Envia los valores dentro de la url
+            - POST -> Envia los valores a travez de los headers => f12-> Network -> formulario -> headers y al final aparecen los datos.
+
+            Cual es mejor ? -> preferencia pero tambien depende porque si es un formulario muy grande una url solo permite 255 caracteres y tocaria utilizar POST.
+
+            ninguno es seguro para enviar datos, la forma segura es utilizando cerfiticados que se encarguen de encriptar todas nuestras conexiones.
+        -->
+        <!-- 
+            Formularios
+
+            ***input:
+            - id -> va en conjunto con el atributo for de la etiqueta label
+
+            - name -> importante porque cuando enviemos este formulario a un servidor, el servidor va a interpretar los datos del formulario por el nombre que le indiquemos, recibe un objeto que tiene una llave y valor, la llave es el valor que pongamos en name y el valor es el contenido que se digite en el input.
+
+            - placeholder -> informar al usuario que se debe escribir en el input
+
+            - type -> 
+                text = por defecto es de tipo text osea que si no la especifico toma ese valor
+                submit = se transforma en un boton
+                email = espera que se ingrese un valor de tipo email
+                password = oculta el valor que se esta digitando en el input con ******
+                radio = se transforma en un boton de radio
+                checkbox = se transforma en una casilla de checkeo
+                file = se convierte un boton que me permite seleccionar un archivo para cargarlo
+            
+            - value -> Para poner valores por defecto, para el  tag texarea no existe value, simplemente se pone el texto en medio y listo.
+                
+
+            ***label:
+            - for -> Para que tengo foco en el input pero debo darle un identificador de cual va a ser el campo al cual le quiero dar el foco, osea que en el input debo poner un atributo id 
+        -->
+    </form>
+    <br>
+    <hr>
+
+
+    <h2>Botones</h2>
+    <!-- 
+        Los input de tipo submit tienen un problema y es que no podemos agregar etiquetas dentro de estos, es mejor utilizar otro tipo de etiqueta -> button que es mas personalizable.
+    -->
+    <form action="/formulario" method="GET">
+        <label for="name">Nombre</label>
+        <input value="Jeffersonn" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <br>
+
+        <label for="apellido">Apellido</label>
+        <input value="Urrea" type="text" id="apellido" name="ape" placeholder="Ingresa tu nombre">
+        <br>
+
+        <button type="submit">
+            <img src="https://placeimg.com/640/480/any" height="30px" alt=""> Enviar
+        </button>
+    </form>
+    <br><hr>
+
+
+    <h2>Listas</h2>
+    <!-- 
+        ul -> Unordered list (lista No Ordenada) -> puntos
+        li -> list item (item de la lista)
+        ol -> Ordered list (lista Ordenada) -> numeros
+    -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <br><hr>
+
+
+    <h2>Tablas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 400px;">Producto</th>
+                <th style="width: 150px;">Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>celular</td>
+                <td>$ 500.000</td>
+            </tr>
+            <tr>
+                <td>celular</td>
+                <td>$ 600.000</td>
+            </tr>
+            <tr>
+                <td>celular</td>
+                <td>$ 700.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td>$ 1.800.000</td>
+            </tr>
+        </tfoot>
+        
+        
+        
+    </table>
+
+
+
+
+
+
+
+</body>
+
+</html>

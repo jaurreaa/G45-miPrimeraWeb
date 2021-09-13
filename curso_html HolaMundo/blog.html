@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+
+  <body>
+    <header>
+        <h1 id="titulo">Blog de Jeffersonn Urrea</h1>
+    </header>
+
+    <!-- div -> tiene la misma funcionalidad de la etiqueta section, se utiliza para dividir el contenido y para agruparlo en secciones -->
+    <div>
+      <p>parrafo con div</p>
+    </div>
+
+    <!-- Atributos id y class -->
+    <!-- Vamos a querer en algun momento querer darle un identificador unico o generico a nuestras etiquetas html y esto por lo general va a ser para poder interactuar con ellos mediante JavaScript o para poder asignarle algun estilo  -->
+    <!-- el atributo id no lo puedo repetir es decir no puedo poner el mismo id para 2 etiquetas, si quiero hacer esto debo utilizar el atributo class   -->
+
+    <section>
+      <!-- article se utiliza para definir contenido completamente independiente, para este caso funciona muy bien para poder definir los post de un blog donde vamos a poner un titulo, una descripcion, una img y un parrafo. Tambien se puede utilizar para una historia de noticia para poder enmarcar una publicacion, tambien para un twitt o para una img en el caso de instagram -->
+      <article class="post">
+        <h2>Titulo de mi post</h2>
+        <p>descripcion de mi post</p>
+        <img src="https://placeimg.com/640/480/any" width="400" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, officia rem. Autem magni blanditiis obcaecati et modi sunt explicabo laborum, a, minima nisi facere aspernatur, ipsa eveniet libero cum ratione!</p>
+      </article class="post" >
+      <article>
+        <h2>Titulo de mi post 2</h2>
+        <p>descripcion de mi post 2</p>
+        <img src="https://placeimg.com/640/480/any" width="400" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, officia rem. Autem magni blanditiis obcaecati et modi sunt explicabo laborum, a, minima nisi facere aspernatur, ipsa eveniet libero cum ratione!</p>
+      </article class="post" >
+      <article>
+        <h2>Titulo de mi post 3</h2>
+        <p>descripcion de mi post 3</p>
+        <img src="https://placeimg.com/640/480/any" width="400" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, officia rem. Autem magni blanditiis obcaecati et modi sunt explicabo laborum, a, minima nisi facere aspernatur, ipsa eveniet libero cum ratione!</p>
+      </article>
+    </section>
+
+    <footer>
+      <a href="#titulo">ir a titulo principal</a>
+      <a href="mailto:jau2705@gmail.com">contactame aqui</a>
+      <p>Copyright 2021</p>
+    </footer>
+  </body>
+</html>

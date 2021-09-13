@@ -1,0 +1,12 @@
+h1 {
+  color: blue;
+}
+p {
+  color: white;
+  background-color: crimson;
+  padding: 15px;
+  border: 10px solid powderblue;
+  margin: 40px 15px 20px 10px ;
+  margin: auto 50px; /*auto centra horizontalmente a lo largo de la pantalla si le pongo tamaño le pone margen a los lados unicamente */
+  text-align: center; /*centrar texto*/
+}

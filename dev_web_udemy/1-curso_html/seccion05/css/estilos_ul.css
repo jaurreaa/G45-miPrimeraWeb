@@ -1,0 +1,28 @@
+h1 {
+    color: #1d3557;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #457b9d;
+    overflow: hidden; /*muesta la lista en un bloque independiente de lo contrario se va a estar combinando con los demas elementos*/
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left; /*ordena horizontal*/
+}
+
+li a { /*selecciona los a que estan dentro de li*/
+    display: block; /*para que los elementos se desplieguen como un bloque*/
+    color: white; 
+    text-align: center;
+    padding: 15px;
+    text-decoration: none; /*para quitar el subrayado en esos links*/
+
+}
+
+li a:hover{
+    background-color: #1d3557;
+}
